@@ -1,0 +1,226 @@
+
+/******selectmain中部的样式*****************/
+#shelper{
+	display:none;
+	position: absolute;
+	right:172px;
+	top:85px;
+	width:227px;
+	overflow: auto;
+	z-index: 20;
+	border: 1px solid #ffa8a8;
+	background-color: #fff;
+	opacity:0.8; 
+	box-shadow: 1px 2px 1px rgba(0,0,0,.2);
+}
+#shelper>li{
+	overflow: hidden;
+	padding: 1px 6px;
+	line-height: 24px;
+	cursor: pointer;
+}
+#shelper>li:hover,#shelper>li.hover{
+  background:#FF6646;
+	color:#fff;
+}
+#shelper .search-item{
+	display:block;
+	height:40px;
+	line-height:40px;
+  color: #FF6646;
+  width: 227px;
+	font-size:14px;
+  overflow: hidden;
+}
+
+.select{
+	position:relative;
+	width:100%;
+	margin-top:10px;
+}
+.selectmain {
+    position: relative;
+    z-index: 10;
+    width:100%;
+    margin: 0 auto;
+    padding: 9px 24px 39px 24px;
+    box-shadow:0px 5px 30px rgba(0,0,0,0.2);
+	box-sizing:border-box;
+}
+.select ul {
+    float: left;
+    width: 500px;
+    padding-top: 15px;
+}
+.select li {
+    float: left;
+    width: 25%;
+    height:120px;
+    text-align: center;
+}
+.select li img{
+	display:block;
+	margin:0 auto;
+}
+.select li span{
+	font-size:16px;
+	line-height:30px;
+	text-align: center;
+	color:#999;
+}
+.sousuokuang {
+  float: left;
+  padding: 30px 0 0 0px;
+	margin-left:80px;
+}
+.sousuobtn {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 44px;
+    border:1px solid #FF6646;
+	border-radius:30px 30px;
+}
+.sousuobtn input {
+	display:block;
+	width: 240px;
+	height: 40px;
+	line-height: 44px;
+	text-align: left;
+	border: 0;
+	font-size: 16px;
+	color: #999;
+	background-color:transparent;
+	outline:none;
+	position:absolute;
+	top:2px;
+	left:20px;
+}
+.sousuobtn a {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0px;
+    height: 48px;
+    width: 50px;
+    background: url('../recoveimg/sousuobtn.png') center center no-repeat;
+    text-indent: -9999px;
+}
+.sousuokuang p {
+    height: 18px;
+    padding-top: 18px;
+    line-height: 18px;
+}
+.sousuokuang p span {
+    float: left;
+    font-size: 12px;
+}
+.sousuokuang p a {
+    float: left;
+    padding: 0 5px;
+    margin-left: 6px;
+    font-size: 12px;
+    color: #a5a5a5;
+    background-color: #e0e0e0;
+    max-width: 83px;
+    height: 19px;
+    overflow: hidden;
+}
+/*机型的样式表*/
+.jixing{
+	width:100%;
+	margin-top:30px;
+	background-color: #fff;
+}
+.jixing dl{
+	padding: 30px 0;;
+}
+.jixing dt{
+	width:40px;
+	float:left;
+	line-height:40px;
+	padding:0 20px;
+	font-size:15px;
+}
+.jixing dd{
+	display:inline-block;
+	float:left;
+}
+.jixing dd.one{
+	width:940px;
+	margin-bottom:20px;
+}
+.jixing dd a{
+	float:left;
+	width:105px;
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	border:1px solid #ddd;
+	margin-right:10px;
+	border-radius:30px 30px;
+	font-size:14px;
+	transition:all .2s linear;
+}
+
+.jixing dd a.active{
+	background-color: #FE6500;
+	color:#fff;
+}
+.jixing dd a:hover{
+	background-color: #ddd;
+}
+/*******hsjx*********/
+.hssp{
+	width:100%;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.hssp p{
+	font-size:16px;
+	line-height:40px;
+}
+.hssp p span{
+	color:red;
+	font-size:18px;
+}
+.hssplist {
+	width:100%;
+	float:left;
+}
+.hssplist li{
+	width:23%;
+	float:left;
+	background-color: #fff;
+	margin:0 20px 16px 0;
+	transition:all .3s linear;
+	overflow:hidden;
+	text-align: center;
+}
+.hssplist li:hover{
+	transform:translate(0,-5px);
+	box-shadow:0px 5px 30px rgba(0,0,0,0.2);
+}
+.hssplist li a{
+	display:block;
+	padding:20px 10px;
+}
+.hssplist li img{
+	display:block;
+	width:180px;
+	height:180px;
+	margin:0 auto;
+}
+.hssplist li span{
+	display:block;
+	font-size:18px;
+	margin:10px 0;
+	text-align: center;
+}
+.hssplist li p{
+	font-size:13px;
+}
+.hssplist li p strong{
+	color:red;
+	font-size:17px;
+}

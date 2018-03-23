@@ -1,0 +1,362 @@
+*{
+	box-sizing:border-box;
+}
+/*****************修饰banner的样式***************************/
+#banner{
+	width:1024px;
+	height:322px;
+	overflow:hidden;
+	margin-top:10px;
+	position:relative;
+}
+#banner ul.banner-img{
+	position:absolute;
+	left:0;
+}
+#banner ul.banner-img>li{
+	float:left;
+	width:1024px;
+	transition:all .3s linear;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#banner .banner-img img{
+	width:1024px;
+}
+#banner ul.banner-indicators{
+	position:absolute;
+	bottom:90px;
+	left:462px;
+}
+#banner .banner-indicators li{
+	width:10px;
+	height:10px;
+	border:2px solid transparent;
+	border-radius:50%;
+	background-color: #917045;
+	float:left;
+	margin-right:15px;
+}
+#banner .banner-indicators li:hover,#banner .banner-indicators li.hover{
+	background-color: #fff;
+	border:2px solid #000;
+}
+.imgList li{ display:none;}
+.imgList .imgOn{ display:inline-block;}
+
+/*****************修饰banner的样式***************************/
+/******selectmain中部的样式*****************/
+#shelper{
+	display:none;
+	position: absolute;
+	right:172px;
+	top:82px;
+	width:160px;
+	overflow: auto;
+	z-index: 20;
+	border: 1px solid #ffa8a8;
+	background-color: #fff;
+	opacity:0.8; 
+	box-shadow: 1px 2px 1px rgba(0,0,0,.2);
+}
+#shelper>li{
+	overflow: hidden;
+	padding: 1px 6px;
+	line-height: 24px;
+	cursor: pointer;
+}
+#shelper>li:hover,#shelper>li.hover{
+  background:#FF6646;
+	color:#fff;
+}
+#shelper .search-item{
+	display:block;
+	height:40px;
+	line-height:40px;
+  color: #FF6646;
+  width: 100%;
+	font-size:14px;
+  overflow: hidden;
+}
+
+.wrapper{
+	margin-top:15px;
+}
+.select{
+	position:relative;
+}
+.selectmain {
+    position: relative;
+    z-index: 10;
+    width:800px;
+    margin: 0 auto;
+    padding: 9px 24px 39px 24px;
+    margin-top: -80px;
+	background-color: #fff;
+    box-shadow:0px 5px 30px rgba(0,0,0,0.2);
+}
+.select ul {
+    float: left;
+    width: 500px;
+    padding-top: 15px;
+}
+.select li {
+    float: left;
+    width: 25%;
+    height:120px;
+    text-align: center;
+}
+.select li img{
+	display:block;
+	margin:0 auto;
+}
+.select li span{
+	font-size:16px;
+	line-height:30px;
+	text-align: center;
+	color:#999;
+}
+.sousuokuang {
+  float: left;
+  padding: 30px 0 0 0px;
+	margin-left:30px;
+}
+.sousuobtn {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 44px;
+    padding: 12px 24px 2px;
+    border:1px solid #FF6646;
+	border-radius:30px 30px;
+}
+.sousuobtn input {
+	display:block;
+	width: 140px;
+	height: 40px;
+	line-height: 44px;
+	text-align: left;
+	border: 0;
+	font-size: 16px;
+	color: #999;
+	background-color:transparent;
+	outline:none;
+	position:absolute;
+	top:5px;
+}
+.sousuobtn a {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0px;
+    height: 48px;
+    width: 50px;
+    background: url('../recoveimg/sousuobtn.png') center center no-repeat;
+    text-indent: -9999px;
+}
+.sousuokuang p {
+    height: 18px;
+    padding-top: 18px;
+    line-height: 18px;
+}
+.sousuokuang p span {
+    float: left;
+    font-size: 12px;
+}
+.sousuokuang p a {
+    float: left;
+    padding: 0 5px;
+    margin-left: 6px;
+    font-size: 12px;
+    color: #a5a5a5;
+    background-color: #e0e0e0;
+    max-width: 83px;
+    height: 19px;
+    overflow: hidden;
+}
+/*******hsjx*********/
+.hssp{
+	width:70%;
+	float:left;
+}
+.hssp .rmhsjx{
+	width:100%;
+	float:left;
+	line-height:70px;
+}
+.hssp .rmhsjx strong{
+	float:left;
+	display:block;
+	font-size:25px;
+	font-weight:normal;
+
+}
+.hssp .rmhsjx p{
+	float:right;
+	font-size:18px;
+	color:#666;
+}
+.hssp .rmhsjx p span{
+	margin-right:30px;
+}
+.hssp .rmhsjx p span:hover{
+	color:red;
+	border-bottom:2px solid red;
+	cursor:pointer;
+}
+.hssplist {
+	width:100%;
+	float:left;
+}
+.hssplist li{
+	width:30%;
+	float:left;
+	background-color: #fff;
+	margin:0 20px 16px 0;
+	transition:all .3s linear;
+	overflow:hidden;
+	text-align: center;
+}
+.hssplist li:hover{
+	transform:translate(0,-5px);
+	box-shadow:0px 5px 30px rgba(0,0,0,0.2);
+}
+.hssplist li a{
+	display:block;
+	padding:20px 10px;
+	
+}
+.hssplist li img{
+	display:block;
+	width:180px;
+	height:180px;
+	margin:0 auto;
+}
+.hssplist li span{
+	display:block;
+	font-size:18px;
+	margin:10px 0;
+	text-align: center;
+}
+.hssplist li p{
+	font-size:13px;
+}
+.hssplist li p strong{
+	color:red;
+	font-size:17px;
+}
+/*******hsjx右边导航***********/
+.pinpai{
+	width:30%;
+	float:left;
+	margin-top:70px;
+	background-color: #fff;
+	
+}
+.pinpai h2 span{
+	margin-top:10px;
+}
+.pinpai h2 span,.pinpai h2 strong{
+	display:block;
+	width:100%;
+	font-size:22px;
+	color:#666;
+	text-align: center;
+	font-weight:normal;
+}
+.pinpai h2 strong{
+	color:#999;
+	font-size:25px;
+	margin:20px 0;
+}
+
+.pinpai .brand-ul ul{
+	margin-left:23px;
+	text-align: center;
+	perspective:50000px;
+}
+.pinpai .brand-ul li{
+	float:left;
+	width:130px;
+	height:130px;
+	padding:15px;
+	border:1px solid #f7efef;
+	position:relative;
+	transform-style:preserve-3d; 
+	transform-origin: right center;
+}
+.pinpai .brand-ul ul li a{
+	display:block;
+	width:100px;
+	height:100px;
+	background-color: #ececec;
+	line-height:100px;
+	transition:all .2s linear;
+	font-size:16px;
+	color:#000;
+	overflow:hidden;
+}
+
+.pinpai .brand-ul ul li p{
+	width:100px;
+	height:100px;
+	background-color: #FF5000;
+	line-height:100px;
+	transition:all .2s linear;
+	font-size:16px;
+	color:#fff;	
+	position:absolute;
+	top:15px;
+	left:15px;
+	transform:rotateY(-180deg);
+}
+.pinpai .brand-ul ul li:hover a{
+	transform:rotateY(180deg);
+}
+.pinpai .brand-ul ul li:hover p{
+	transform:rotateY(0deg);
+	cursor:pointer;	
+}
+.gengduopinpai{
+	width:100%;
+	margin:20px 0;
+}
+
+.gengduopinpai a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #e6e6e6;
+    color: #666;
+    font-size: 14px;
+	transition:all .3s linear;
+}
+.gengduopinpai a:hover{
+	background-color: #FF5000;
+	color:#fff;
+}
+
+.guanggao{
+	width:100%;
+	height:118px;
+	margin:30px 0 40px 0;
+}
+.guanggao a:first-child{
+	display:block;
+	float:left;
+}
+.guanggao a:last-child{
+	display:block;
+	float:right;
+}
+.guanggao a{
+	transition:all .3s linear;
+}
+.guanggao a:hover{
+	transform:translate(0,-5px);
+	box-shadow:0px 5px 30px rgba(0,0,0,0.2);
+}

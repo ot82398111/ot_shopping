@@ -1,0 +1,75 @@
+
+#denglu{
+	width:1000px;
+	height:600px;
+	background-color: #fff;
+	margin-top:40px;
+	position:relative;
+}
+div.login{
+	width:350px;
+	margin:0 auto;
+	text-align: center;
+	margin-top:60px;
+}
+div.ltext{
+	font-size:28px;
+	line-height:50px;
+	padding-top:10px;
+	font-family:"yahei";
+}
+#uname,#upwd{
+	line-height: 25px;
+    padding:3px 12px;
+    width: 250px;
+    border: 1px solid #dedfe1;
+    background-color: #fff;
+    color: #4d3333;
+}
+ul li span{
+	font-size:25px;
+	color:#999;
+	vertical-align:bottom;
+	margin-right:10px;
+}
+p.totle{
+	margin:30px 0 10px 0;
+}
+span.wangji,span.register{
+	color:blue;
+	font-size:13px;
+	font-style:italic;
+}
+span.register{
+	float:right;
+}
+span.wangji{
+	float:left;
+}
+div.login ul{
+	padding-top:60px;
+}
+#upwd{
+	margin-top:20px;
+}
+#btn{
+	margin-top:30px;
+	background-color: #FF5000;
+	padding:8px 60px;
+	font-size:20px;
+	color:#fff;
+	border:none;
+}
+#btn:hover{
+	background-color: #FF6100;
+}
+p.msg{
+	font-size:15px;
+	color:#bebebe;
+	margin-top:60px;
+}
+div.fanhui>a>img{
+	position:absolute;
+	top:60px;
+	right:0;
+}

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>手机维修网-欢迎你</title>
+	<link type="image/vnd.microsoft.icon" href="hi_ico.png" rel="shortcut icon"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/top-nav.css">
+	<link rel="stylesheet" href="css/order_list.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	<div class="main">
+		<!--top nav导航-->
+		<nav id="top-nav"></nav>
+		<!--面包屑导航-->
+		<div class="crumbs">
+			<div class="top_step clear">
+				<div class="step step1"><span>01</span>选择设备型号</div>
+				<em class="step_arr"></em>
+
+				<div class="step step2"><span>02</span>选择维修方案</div>
+				<em class="step_arr"></em>
+
+				<div class="step step3 curr_step"><span>03</span>填写用户信息</div>
+				<em class="step_arr"></em>
+
+				<div class="step step4"><span>04</span>完成</div>
+			</div>
+		</div>
+		<!--中部的详情模块-->
+		<div class="middle clear">
+			<div class="middle_left">
+				<dl class="leixing">
+					<dt>维修类型</dt>
+						<dd>
+							<div class="weixiuleixing">
+								<a href="javascript:;" id="youji">邮寄维修
+									<em class="checked" style="display:none;"><i class="iconok"></i></em>
+								</a>
+								<a href="javascript:;" id="daodian">到店维修
+									<em class="checked" style="display:none;"><i class="iconok"></i></em>	
+								</a>
+							</div>
+						</dd>
+				</dl>
+				<ul class="xlfs">
+					 <li>
+						<label>姓名</label>
+						<input type="text" data-placeholder="请输入姓名" placeholder="请输入姓名"
+										class="inputs userName"/>
+						<p>*请输入姓名</p>
+					</li>
+					<li>
+							<label>手机</label>
+							<input type="text" data-placeholder="请输入手机号码" placeholder="请输入手机号码"
+											class="inputs telphone" />
+							<p>*请输入正确的手机号码</p>
+					</li>
+					<li class="imgyanzheng">
+							<label>图形验证码</label>
+							<input type="text" data-placeholder="请输入验证码" placeholder="请输入验证码"
+											class="inputs codeMa">
+							<div class="imgcode">
+									<img class="shuaxin" src="data/01_code.php" title="看不清，点击换一张"/>
+							</div>
+							<p>*请输入正确的图形验证码</p>
+					</li>
+					<!--  input 输入文字的颜色为 #333333 输入错误弹出提示 input增加样式 userinfoFalse  -->
+					
+					<li class="jihuidizhi"><label>寄回地址</label>
+						<div class="address">
+							<select id="selProvince">
+								<option>-------省-------</option>
+							</select>
+							<select id="selCity">
+								<option>-------市-------</option>
+							</select>
+							<select id="selArea">
+								<option>-------县-------<option>
+							</select>
+						</div>	
+							<p>*请选择</p>
+					</li>
+					<li><label>&nbsp;</label>
+							<input class="jiuxiu_adrdetail inputs" type="text" placeholder="请输入详细地址" />
+							<p>*请输入您的地址</p>
+					</li>
+					<li>
+							<label>维修中心</label>
+							<div class="weixiuzhongxin">
+								<select>
+									<option>------请选择维修中心------</option>
+									<option value="西安维修中心">------西安维修中心------</option>
+									<option value="成都维修中心">------成都维修中心------</option>
+									<option value="广州维修中心">------广州维修中心------</option>
+									<option value="郑州维修中心">------郑州维修中心------</option>
+									<option value="太原维修中心">------太原维修中心------</option>
+									<option value="长沙维修中心">------长沙维修中心------</option>
+									<option value="深圳维修中心">------深圳维修中心------</option>
+									<option value="吉林维修中心">------吉林维修中心------</option>
+								</select>
+							</div>
+					</li>
+					<li>
+							<label>IMEI</label>
+							<input type="text" class='jx_imei inputs' placeholder="在拨号面板输入 *#06#；或查看购买设备包装条码" />
+					</li>
+					<li>
+							<label>备注</label>
+							<textarea placeholder="请输入备注内容" class="jx_remark"></textarea>
+					</li>
+				</ul>
+
+			</div>
+			<div class="middle_right">
+				<ul class="userInfo">
+					<!-- <li><span>产品：</span><span class="mpType">手机</span></li>
+					<li><span>型号：</span><span class="type">iphone6S</span></li>
+					<li><span>故障部位：</span><span class="color">颜色</span></li>
+					<li><span>故障报价：</span><span class="price">160:00</span></li> -->
+				</ul>
+				<div class="userinfoPrice">
+					<p><span>应付：</span><b>￥160.00</b></p>
+				</div>
+				<div class="xinxitxt">
+					<p><span>1、</span>具体维修时间以工程师预约为准；</p>
+					<p><span>2、</span>损坏零件工程师需要收回，如需自留需另补差价；</p>
+					<p><span>3、</span>该维修价格为预计金额，实际金额以工程师检测故障为准；</p>
+					<p><span>4、</span>如上门通过技术调试（未涉及零件）即完成维修，则仅收取90元修复费；</p>
+				</div>
+			</div>
+		</div>
+		<div class="userinfoStep">
+			<a href="javascript:window.history.go(-1);">上一步</a>
+			<a href="javascript:;" class="thisStep" id="thisStep">立即下单</a>
+		</div>
+
+		<!--服务说明模块-->
+		<div class="mp_promise">
+			<h2>
+				<em class="h2-icon"></em>
+				服务说明
+			</h2>
+			<div class="service_box clear">
+				<dl class="rone">
+					<dt><img src="img/detail/wxzb.png" alt="">维修准备</dt>
+					<dd>如果您设置了锁屏密码，请在维修前取消密码，以便于我们更好地维修您的设备。</dd>
+				</dl>
+				<dl class="rone">
+					<dt><img src="img/detail/sjbf.png" alt="">数据备份</dt>
+					<dd>维修前，备份好您的数据；我们不会备份和泄露您的数据，亦不对数据丢失负责。</dd>
+				</dl>
+				<dl class="rone">
+					<dt><img src="img/detail/wzbx.png" alt="">维修质保</dt>
+					<dd>针对维修配件提供180天免费质保服务，Hi维修工程师必须经过严格的培训合格后才能上岗，追求极致服务体验。</dd>
+				</dl>
+				<dl class="rone">
+					<dt><img src="img/detail/qclx.png" alt="">全程录像</dt>
+					<dd>维修过程全部录像，数据安全有保障。</dd>
+				</dl>
+			</div>
+		</div>          
+		<!--用户评论位置-->
+		<div class="user_comment">
+			<h2>
+				<em class="h2-icon"></em>
+				用户评论
+			</h2>
+			<div class="user_message tbl">
+				<div id="showComment">
+					<div class="user_msg">
+						<div class="date">2014-09-20 19:58:48</div>
+						<div class="msg"><p>小伙伴很好，技术高超，服务周到！</p></div>
+						<div class="reply"><span>手机维修回复：</span>感谢您对Hi维修的支持，我们为客户提供价格便宜、安全可靠的免费上门手机维修与回收服务！</div>
+					</div>	
+				</div>	
+				<!--分页模块-->
+				<div class="page clear">
+					<ul class="pagination clear" id="pagination">
+						<!--<li><a href="#">上一页</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="active"><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">下一页</a></li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/order.js"></script>
+	<!-- <script src="js/showUser"></script> -->
+</body>
+</html>	

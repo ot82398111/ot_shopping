@@ -1,0 +1,392 @@
+/********面包屑导航*****/
+*{
+	box-sizing:border-box;
+}
+.crumbs{
+	width:100%;
+	margin-top:15px;
+	background-color: #fff;
+}
+.top_step{
+	width:100%;
+	border-bottom:1px solid #ddd;
+}
+.step,step_arr{
+	float:left;
+	font-size:15px;
+	width:24%;
+	color:#999;
+	text-align: center;
+	line-height:70px;
+}
+.step span{
+	margin-right:25px;
+}
+.crumbs .top_step .step_arr{
+	display:inline-block;
+	float: left;
+    width: 12px;
+    height: 70px;
+		background-image:url("../img/detail/2017-09-03_201554.png");
+		background-repeat:no-repeat;
+		background-position:center center;
+}
+.crumbs .curr_step{
+	color:red;
+}
+
+/******服务内容与用户评论的title样式*******/
+.mp_promise .h2-icon,.user_comment .h2-icon{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background-color: #FF5000;
+}
+.mp_promise h2,.user_comment h2{
+	font-family:"微软雅黑";
+	font-size:20px;
+	line-height:25px;
+	padding:30px 0 20px 0;
+	color:#333;
+	font-weight:normal;
+}
+/*********订单填写样式*************/
+.middle{
+	width:100%;
+	background-color: #fff;	
+}
+.middle_left{
+	width:50%;
+	float:left;
+	padding:20px 0 10px 0;
+}
+.middle_right{
+	width:50%;
+	float:left;
+	padding:20px 0 10px 30px;
+}
+.leixing {
+    padding: 10px 0 8px;
+    margin-top: -10px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    overflow: hidden;
+}
+.leixing dt {
+    float: left;
+    width: 30%;
+    line-height: 50px;
+    text-align: right;
+    padding-right: 18px;
+}
+.weixiuleixing {
+    height: 66px;
+    width: 100%;
+}
+.weixiuleixing a {
+    position: relative;
+    float: left;
+    width: 124px;
+    text-align: center;
+    margin-right: 15px;
+    height: 48px;
+    line-height: 48px;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+
+/*选择框*/
+.checked{
+	display:block;
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	width:124px;
+	height:48px;
+	border:2px solid red;
+}
+.checked .iconok{
+	display:block;
+	width:16px;
+	height:16px;
+	background-image:url("../img/detail/iconok.png");
+	position:absolute;
+	top:-8px;
+	right:-8px;
+}
+ul.xlfs li{
+    position: relative;
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+    padding-bottom: 24px;
+    width: 100%;
+}
+ul.xlfs li label {
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding-right: 18px;
+}
+ul.xlfs li input{
+    float: left;
+    border: 1px solid #ccc;
+    line-height: 18px;
+    width: 70%;
+    padding: 15px 19px;
+    color: #999;
+}
+
+ul.xlfs li input:focus{
+	outline:1px solid red;
+	border: 1px solid transparent;
+}
+
+ul.xlfs li p {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #ff5000;
+}
+ul.xlfs li.imgyanzheng input{
+	width:40%;
+}
+ul.xlfs li.imgyanzheng .imgcode{
+	width:30%;
+	float:left;
+	padding-left:10px
+}
+ul.xlfs li .imgcode img{
+	display:inline-block;
+	height:48px;
+	line-height:50px;
+}
+ul.xlfs li.jihuidizhi div.address{
+	width:70%;
+	float:left;
+}
+ul.xlfs li.jihuidizhi .address select{
+	width:32%;
+	height:50px;
+	border: 1px solid #ccc;
+	color: #999;
+	font-size:15px;
+}
+
+ul.xlfs li.jihuidizhi .address select:focus,ul.xlfs li .weixiuzhongxin select:focus{
+	outline:none;
+}
+ul.xlfs li .weixiuzhongxin{
+	width:70%;
+	float:left;
+}
+ul.xlfs li .weixiuzhongxin select{
+	width:100%;
+	height:50px;
+	border: 1px solid #ccc;
+	color: #999;
+	font-size:15px;
+}
+ul.xlfs li textarea {
+    float: left;
+    border: 1px solid #ccc;
+    line-height: 26px;
+    padding: 10px 19px;
+    width: 70%;
+    height: 98px;
+    resize: none;
+}
+ul.xlfs li textarea{
+	outline:none;
+}
+.middle_right ul{
+	margin:0 20px;
+	background-color:#fcfcfc;
+	border: 1px solid #eaeaea;
+    border-bottom:1px solid transparent;
+}
+.middle_right ul li{
+	line-height:65px;
+	font-size:16px;
+	color:#333;
+	padding-left:20px;
+}
+.middle_right ul li span{
+	color:#999;
+	margin-right:10px;
+}
+.userinfoPrice {
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+    height: 100px;
+    margin: 0 20px;
+    background-color: #fff;
+}
+.userinfoPrice p {
+    float: right;
+    font-size: 26px;
+    color: #333;
+    padding-top: 25px;
+    line-height: 48px;
+	padding-right:20px;
+}
+.userinfoPrice p span{
+	font-size:18px;
+	color:#999;
+}
+.userinfoPrice p b{
+	color:red;
+}
+
+.xinxitxt {
+    margin:0 20px;
+    margin-top: 24px;
+    background-color: #ffec92;
+}
+div.xinxitxt p {
+    position: relative;
+    padding-left: 20px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #cf8800;
+}
+.userinfoStep{
+	width:100%;
+	height:100px;
+	text-align: center;
+	background-color: #fff;
+	line-height:100px;
+}
+.userinfoStep a{
+	transition:all .3s linear;
+	padding:15px 50px;
+}
+.userinfoStep a:first-child{
+	background-color: #fff;
+	border:1px solid #999;
+	font-size:15px;
+}
+.userinfoStep a:first-child:hover{
+	background-color: #FF8400;
+	color:#fff;
+}
+.userinfoStep a:last-child{
+	background-color: #FF5000;
+	border:1px solid #FF5000;
+	margin-left:30px;
+	color:#fff;
+	font-size:15px;
+}
+.userinfoStep a:last-child:hover{
+	background-color: #FF8400;
+}
+
+
+
+
+/********服务说明***********/
+.service_box{
+	width:100%;
+}
+.service_box dl{
+	float:left;
+	width:250px;
+	height:130px;
+	background-color: #fff;
+	margin-right:8px;
+	padding:20px;
+}
+.service_box dl:last-child{
+	margin-right:0;
+}
+.service_box dt{
+	font-size:18px;
+	font-weight:normal;
+	line-height:24px;
+	color:#888;
+	margin-bottom:15px;
+}
+.service_box dt img{
+	margin-right:15px;
+}
+.service_box dd{
+	font-size:12px;
+	color:#888;
+}
+/********用户评论**********/
+.user_comment{
+	position:relative;
+}
+.user_comment .user_message{
+	padding:0 20px 50px 20px;
+	background-color: #fff;
+}
+.user_comment .user_msg{
+	width:100%;
+
+	border-bottom:1px solid #888;
+	margin:20px 0;
+}
+.user_comment .user_msg .date{
+	height:30px;
+	font-size:12px;
+	color:#999;
+	line-height:30px;
+}
+.user_comment .user_msg .msg{
+	height:60px;
+	
+}
+.user_comment .user_msg .msg p{
+	height:30px;
+	line-height:30px;
+	font-size:15px;
+	color:#555;
+}
+.user_comment .user_msg .reply{
+	height:30px;
+	font-size:15px;
+	color:#999;
+	line-height:30px;
+	margin-bottom:20px;
+}
+.user_comment .user_msg .reply span{
+	color:red;
+}
+/*****分页*********/
+.page{
+	width:100%;
+}
+.pagination{
+	position:absolute;
+	bottom:10px;
+	right:15px;
+}
+.pagination li{
+	float:left;
+	display: inline-block;
+	margin-right:5px;
+}
+.pagination li a{
+	border: 1px solid #d9dfe6;
+	padding: 0 11px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	color: #666;
+	
+}
+
+.pagination li.active{
+	background-color: #FFFFCC;
+}
+.pagination li a:hover{
+	background-color: #DBE0E4;
+}

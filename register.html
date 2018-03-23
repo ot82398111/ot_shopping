@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>手机维修-注册</title>
+		<link type="image/vnd.microsoft.icon" href="hi_ico.png" rel="shortcut icon"/>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/register.css">
+  </head>
+  <body>
+    <div class="main tbl" id="zhuce">
+			<div class="register tbl">
+				<div class="logo">
+				<img src="img/login/HiLogo.png">
+			</div>
+			<div class="ltext">手机维修账号注册</div>
+				<form id="form1">
+					<ul class="tbl">	
+						<li>
+							<label>
+							<span>用户名:</span>
+							<input name="uname" placeholder="必填，2个以上字符">
+							</label>
+						</li>
+						<li>
+							<label>
+							<span>密码:</span>
+							<input id="upwd1" name="upwd1" type="password" placeholder="必填，6~8位数字">
+							</label>
+						</li>
+						<li>
+							<label>
+								<span>确认密码:</span> 
+								<input name="upwd2" type="password" placeholder="必须和密码保持一致">
+							</label>
+						</li>
+						<li>
+							<label>
+							<span>电子邮件:</span>
+							<input name="email" placeholder="必填，但必须符合电子邮件">
+							</label>
+						</li>
+						<li>
+							<label>
+							<span>手机号:</span>
+							<input name="mobile" placeholder="选填，但必须符合中国手机号格式">
+							</label>
+						</li>
+						<li>
+							<p class="agree">
+								<label class="ag">
+									<input name="agree" type="checkbox" id="agree">
+									同意
+									<a href="javascript:;" class="xieyi">《手机维修网协议》</a>
+								</label>
+							</p>
+						</li>
+					<ul>
+					<p class="submit">
+						<button type="submit">注册</button>
+					</p>
+					<p class="msg">欢迎使用手机维修网注册系统</p>
+					<div class="fanhui">
+						<a href="javascript:history.go(-1);"><img src="img/login/fanhui.png"/></a>
+					</div>
+				</form>
+			</div>
+		</div>
+    <script src="js/jquery-3.2.1.js"></script>
+		<script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+			$.validator.addMethod("mobile",val=>{
+				if(val.length>0)
+					return /^(\+86|0086)?\s*1[34578]\d{9}$/.test(val);
+				else return true;
+			},"手机号格式不正确");
+      $("#form1").validate({
+				submitHandler(form){
+					$.ajax({
+						url:"data/submit.php",
+						type:"post",
+						data:$("#form1").serialize(),
+						success(msg){
+							alert("注册成功!请登陆！");
+							location.href="login.html";
+							console.log(msg);
+						}
+					})
+//					$(form).ajaxSubmit(msg=>{
+//						alert("注册成功!");
+//						console.log(msg);
+//					});
+				},
+				rules:{
+					uname:{
+						required:true,
+						minlength:2,
+						remote:"data/vali.php"
+					},
+					upwd1:{
+						required:true,
+						minlength:6,
+						maxlength:8,
+						digits:true
+					},
+					upwd2:{
+						required:true,
+						equalTo:"#upwd1"
+					},
+					email:{
+						required:true,
+						email:true,
+						remote:"data/vali.php"
+					},
+					mobile:"mobile",
+					agree:"required"
+				},
+				messages:{
+					uname:{
+						required:"请指定用户名!",
+						minlength:"用户名至少2个字!",
+						remote:"用户名已存在!"
+					},
+					upwd1:{
+						required:"请指定密码!",
+						minlength:"密码至少6位!",
+						maxlength:"密码最多8位!",
+						digits:"只能由数字组成!"
+					},
+					upwd2:{
+						required:"必填!",
+						equalTo:"两次密码不一致!"
+					},
+					email:{
+						required:"必填!",
+						email:"邮箱格式不正确!",
+						remote:"邮箱已被注册！"
+					},
+	
+					agree:"请阅读手机维修网协议!"
+				}
+			});
+    </script>
+  </body>
+</html> 

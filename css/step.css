@@ -1,0 +1,297 @@
+/***********stepcss样式ʽ********/
+/********面包屑导航*****/
+*{
+	box-sizing:border-box;
+}
+.crumbs{
+	width:100%;
+	margin-top:15px;
+	background-color: #fff;
+}
+.top_step{
+	width:100%;
+	border-bottom:1px solid #ddd;
+}
+.step,step_arr{
+	float:left;
+	font-size:15px;
+	width:24%;
+	color:#999;
+	text-align: center;
+	line-height:70px;
+}
+.step span{
+	margin-right:25px;
+}
+.crumbs .top_step .step_arr{
+	display:inline-block;
+	float: left;
+    width: 12px;
+    height: 70px;
+		background-image:url("../img/detail/2017-09-03_201554.png");
+		background-repeat:no-repeat;
+		background-position:center center;
+}
+.crumbs .curr_step{
+	color:red;
+}
+/*******step中部详情样式**********************/
+.middle_step{
+	width:100%;
+	background-color: #fff;
+	padding:20px 20px;
+}
+.set_left,.set_right{
+	float:left;
+}
+.set_left{
+	width:45%;
+	border:1px solid #ddd;
+}
+.set_left img{
+	width:100%;
+}
+.set_right{
+	width:55%;
+	padding:0px 0px 0 30px;
+}
+.bot{
+	text-align:left;
+	padding:20px 0 20px 10px;
+}
+.bot .set_r1{
+	font-size:17px;
+	margin-bottom:15px;
+}
+.bot .set_r2{
+	font-size:12px;
+	color:#999;
+}
+
+.tips{
+	height:30px;
+}
+.tips_h{
+	font-size:20px;
+	padding-bottom:20px;
+	font-family:"΢���ź�";
+}
+.tips span{
+	margin-right:28px;
+	color:#999;
+	font-size:12px;
+}
+.tips img{
+	vertical-align:middle;
+}
+.wx_price{
+	background-color:#F5F5F5;
+	padding:0 8px;
+	line-height:60px;
+	font-size:12px;
+	color:#999;
+}
+.wx_price strong{
+	font-size:25px;
+	color:red;
+}
+.r_type{
+	width:100%;
+	margin:20px 0;
+}
+.choose_mptype,.choose_type,.choose_color,.choose_comment{
+	float:right;
+	width:85%;
+}
+.r_type h4,.r_type .item{
+	float:left;
+}
+.r_type h4{
+	width:15%;
+	font-size:12px;
+	font-weight:normal;
+	color:#333;
+	line-height:44px;
+}
+.r_type .item{
+	width:110px;
+	height:40px;
+	font-size:13px;
+	color:#999;
+	text-align:center;
+	line-height:40px;
+	border:1px solid #ddd;
+	margin:0 10px 13px 10px;
+	position:relative;
+}
+.r_type .item:hover{
+	cursor:pointer;
+}
+.checked{
+	display:block;
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	width:110px;
+	height:40px;
+	border:2px solid red;
+}
+.checked .iconok{
+	display:block;
+	width:16px;
+	height:16px;
+	background-image:url("../img/detail/iconok.png");
+	position:absolute;
+	top:-8px;
+	right:-8px;
+}
+/******down_order样式*************/
+.down_order{
+	width:100%;
+	background-color: #fff;
+	margin-top:10px;
+	overflow:hidden;
+}
+.down_order .order_price{
+	font-size:15px;
+	color:#333;
+	float:right;
+	line-height:44px;
+	margin-right:20px;
+}
+.down_order .order_price b{
+	font-size:25px;
+	color:red;
+}
+.down_order .next{
+	width:125px;
+	height:50px;
+	font-size:15px;
+	background-color: #DBE0E4;
+	float:right;
+	line-height:50px;
+	text-align: center;
+}
+.down_order .next a{
+	color:#4b5f8e;
+}
+
+/******服务内容与用户评论的title样式*******/
+.mp_promise .h2-icon,.user_comment .h2-icon{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background-color: #FF5000;
+}
+.mp_promise h2,.user_comment h2{
+	font-family:"微软雅黑";
+	font-size:20px;
+	line-height:25px;
+	padding:30px 0 20px 0;
+	color:#333;
+	font-weight:normal;
+}
+
+/********服务说明***********/
+.service_box{
+	width:100%;
+}
+.service_box dl{
+	float:left;
+	width:250px;
+	height:130px;
+	background-color: #fff;
+	margin-right:8px;
+	padding:20px;
+}
+.service_box dl:last-child{
+	margin-right:0;
+}
+.service_box dt{
+	font-size:18px;
+	font-weight:normal;
+	line-height:24px;
+	color:#888;
+	margin-bottom:15px;
+}
+.service_box dt img{
+	margin-right:15px;
+}
+.service_box dd{
+	font-size:12px;
+	color:#888
+}
+/********用户评论**********/
+.user_comment{
+	position:relative;
+}
+.user_comment .user_message{
+	padding:0 20px 50px 20px;
+	background-color: #fff;
+}
+.user_comment .user_msg{
+	width:100%;
+
+	border-bottom:1px solid #888;
+	margin:20px 0;
+}
+.user_comment .user_msg .date{
+	height:30px;
+	font-size:12px;
+	color:#999;
+	line-height:30px;
+}
+.user_comment .user_msg .msg{
+	height:60px;
+	
+}
+.user_comment .user_msg .msg p{
+	height:30px;
+	line-height:30px;
+	font-size:15px;
+	color:#555;
+}
+.user_comment .user_msg .reply{
+	height:30px;
+	font-size:15px;
+	color:#999;
+	line-height:30px;
+	margin-bottom:20px;
+}
+.user_comment .user_msg .reply span{
+	color:red;
+}
+/*****分页*********/
+.page{
+	width:100%;
+}
+.pagination{
+	position:absolute;
+	bottom:10px;
+	right:15px;
+}
+.pagination li{
+	float:left;
+	display: inline-block;
+	margin-right:5px;
+}
+.pagination li a{
+	border: 1px solid #d9dfe6;
+	padding: 0 11px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	color: #666;
+	
+}
+
+.pagination li.active{
+	background-color: #FFFFCC;
+}
+.pagination li a:hover{
+	background-color: #DBE0E4;
+}
+

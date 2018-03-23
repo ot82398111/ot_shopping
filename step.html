@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>手机维修网-欢迎你</title>
+	<link type="image/vnd.microsoft.icon" href="hi_ico.png" rel="shortcut icon"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/top-nav.css">
+	<link rel="stylesheet" href="css/step.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	<div class="main">
+		<!--top nav导航-->
+		<nav id="top-nav"></nav>
+		<!--面包屑导航-->
+		<div class="crumbs">
+			<div class="top_step clear">
+				<div class="step step1 curr_step"><span>01</span>选择设备型号</div>
+				<em class="step_arr"></em>
+
+				<div class="step step2"><span>02</span>选择维修方案</div>
+				<em class="step_arr"></em>
+
+				<div class="step step3"><span>03</span>填写用户信息</div>
+				<em class="step_arr"></em>
+
+				<div class="step step4"><span>04</span>完成</div>
+			</div>
+		</div>
+		<!--中部的详情模块-->
+		<div class="middle_step clear">
+			<!--详情模块左边-->
+			<div class="set_left">
+				<div class="image" id="addImg">
+						<!--<img src="img/detail/faultpic_15_24_34 (1).jpg" alt="故障图"/>-->
+				</div>
+				<div class="bot">
+						<div class="set_r1">服务说明</div>
+						<div class="set_r2">此服务产品使用非原装配件,使用非原装配件将不再享受厂家提供的保修服务.</div>
+				</div>
+			</div>
+			<!--详情模块右边-->
+			<div class="set_right">
+				<div class="tips_h" id="Title"><!--屏幕碎裂、屏幕不亮、触控失灵等--></div>
+				<div class="tips">
+					<span>
+							<em>
+									<img src="img/detail/icon_y001.jpg" alt=""/>
+							</em>
+							品质保障                            
+					</span>
+					<span>
+							<em>
+									<img src="img/detail/icon_y002.jpg" alt=""/>
+							</em>
+							保质180天                            
+					</span>
+					<span>
+							<em>
+									<img src="img/detail/icon_y003.jpg" alt=""/>
+							</em>
+							免费上门                            
+					</span>
+					<span>
+							<em>
+									<img src="img/detail/icon_y004.jpg" alt=""/>
+							</em>
+							维修时长：
+							<label class="re_time">30 分钟</label>
+					</span>
+				</div>
+				<div class="wx_price" id="showPrice">
+						维修报价：
+						<strong v="￥888.00">￥888.00-￥1288.00</strong>
+						原价：
+						<del v="￥0.00-2488.00">￥1288.00</del>
+						
+				</div>
+				<div class="r_type clear">
+					<h4>设备类型：</h4>
+					<div class="choose_mptype clear">
+						<div class="item">
+							手机
+							<em class="checked" style="display:none;"><i class="iconok"></i></em>
+						</div>
+						<!--<div class="item">
+							平板
+							<em class="checked" style="display:none;"><i class="iconok"></i></em>
+						</div>-->
+					</div>
+					<input id="addmp" type="hidden" value="">
+				</div>
+				<div class="r_type clear">
+					<h4>型号选择：</h4>
+					<div class="choose_type clear" id="showType">
+						<!--<div class="item">
+							iphone 8
+							<em class="checked" style="display:none;"><i class="iconok"></i></em>
+						</div>-->
+					</div>
+					<input id="addmpType" type="hidden" value="">
+					<input id="testPhone" type="hidden" value="">
+				</div>
+				<div class="r_type clear">
+					<h4>颜色选择：</h4>
+					<div class="choose_color clear" id="showColor">
+						<!--<div class="item">
+							<span></span>
+							<em class="checked" style="display:none;"><i class="iconok"></i></em>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--结算模块-->
+		<div class="down_order clear">
+			<div class="next"><a href="javascript:;" style="display:inline-block;width:125px;height:50px;">下一步</a></div>
+			<div class="order_price">合计：<b>--.--</b>元</div>
+		</div>
+		<!--服务说明模块-->
+		<div class="mp_promise">
+			<h2>
+				<em class="h2-icon"></em>
+				服务说明
+			</h2>
+			<div class="service_box clear">
+				<dl class="rone">
+					<dt><img src="img/detail/wxzb.png" alt="">维修准备</dt>
+					<dd>如果您设置了锁屏密码，请在维修前取消密码，以便于我们更好地维修您的设备。</dd>
+				</dl>
+				<dl class="rone">
+					<dt><img src="img/detail/sjbf.png" alt="">数据备份</dt>
+					<dd>维修前，备份好您的数据；我们不会备份和泄露您的数据，亦不对数据丢失负责。</dd>
+				</dl>
+				<dl class="rone">
+					<dt><img src="img/detail/wzbx.png" alt="">维修质保</dt>
+					<dd>针对维修配件提供180天免费质保服务，Hi维修工程师必须经过严格的培训合格后才能上岗，追求极致服务体验。</dd>
+				</dl>
+				<dl class="rone">
+					<dt><img src="img/detail/qclx.png" alt="">全程录像</dt>
+					<dd>维修过程全部录像，数据安全有保障。</dd>
+				</dl>
+			</div>
+		</div>          
+		<!--用户评论位置-->
+		<div class="user_comment">
+			<h2>
+				<em class="h2-icon"></em>
+				用户评论
+			</h2>
+			<div class="user_message tbl">
+				<div id="showComment">
+					<div class="user_msg">
+						<div class="date">2014-09-20 19:58:48</div>
+						<div class="msg"><p>小伙伴很好，技术高超，服务周到！</p></div>
+						<div class="reply"><span>手机维修回复：</span>感谢您对Hi维修的支持，我们为客户提供价格便宜、安全可靠的免费上门手机维修与回收服务！</div>
+					</div>	
+				</div>	
+				<!--分页模块-->
+				<div class="page clear">
+					<ul class="pagination clear" id="pagination">
+						<!--<li><a href="#">上一页</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li class="active"><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">下一页</a></li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/step.js"></script>
+	<script src="js/showUser.js"></script>
+</body>
+</html>	

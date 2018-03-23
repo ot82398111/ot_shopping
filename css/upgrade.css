@@ -1,0 +1,144 @@
+/******pagewrap内部css样式****/
+.pagewrap{
+	margin-top:10px;
+	height:560px;
+	background-color: #fff;
+}
+.major{
+	width:100%;
+	height:380px;
+	background: #ffffff url('../upgradeImg/header_bg.jpg') center center no-repeat;
+	position:relative;
+}
+.logo_img{
+	height:80px;
+	background:url('../upgradeImg/logo.png') left center no-repeat;
+}
+.center_msg{
+	height:372px;
+	background:url('../upgradeImg/header_banner_bg.png') center center no-repeat;
+	margin-top:50px;
+	position:relative;
+}
+.topBanner_img{
+	position:absolute;
+	top:60px;
+	right:110px;
+}
+.topBanner_img img{
+	width:400px;
+}
+.center_msg_title{
+	position:relative;
+	top:50px;
+	left:100px;
+}
+.center_msg_title img{
+	width:500px;
+}
+.nowUpgrade{
+	display:block;
+	height:65px;
+	width:260px;
+	background:url('../upgradeImg/btn260.png') left center no-repeat;
+	text-align: center;
+	line-height:60px;
+	font-size:20px;
+	color:#fff;
+	margin:115px 0 0 135px;;
+}
+
+/**************step_count****************/
+.step_count{
+/*	background-color: #fff;*/
+	margin-top:20px;
+}
+.brand{
+	width:100%;
+	margin:20px 0 50px 0;
+}
+.step_count h2{
+	font-weight:normal;
+	font-size:18px;
+}
+.brand a{
+	width:241px;
+	height: 169px;
+	display:block;
+	float:left;
+	margin-right:20px;
+	text-align: center;
+	position:relative;
+}
+
+.brand a:last-child{
+	margin-right:0;
+}
+
+.brand a img{
+	width:241px;
+	height:169px;
+}
+
+.brand .info {
+    display: none;
+    width: 241px;
+    height: 169px;
+    margin: 0 auto;
+    background-color: #ed6b4d;
+    overflow: hidden;
+}
+.vertical .info{
+	width:0;
+	height:169px;
+	margin:0 auto;
+}
+.brand .info1 {
+    background-color: #ed6b4d;
+}
+.brand .info2 {
+    background-color: #3dc7c9;
+}
+.brand .info3 {
+    background-color: #f1a732;
+}
+.brand .info4 {
+    background-color: #7fc93d;
+}
+.vertical .info .info_c {
+    width: 200px;
+    margin: 50px auto 0;
+    height: 80px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+}
+.step{
+	padding:0 10px;
+	background-color: #fff;
+}
+.step img{
+	display:block;
+	width:1004px;
+	padding:30px 0 30px 0;
+}
+
+/*****服务说明pa_cont********/
+.cont h2{
+	font-weight:normal;
+	margin:20px 0 30px 0;
+	font-size:18px;
+}
+.cont .qa_list li p{
+	font-size:15px;
+	line-height:30px;
+}
+.cont .qa_list li{
+	margin:20px 0;
+}
+.cont .qa_list li .p1{
+	font-size:16px;
+	color:#888;
+}
